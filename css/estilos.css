@@ -1,0 +1,635 @@
+/* Estilos generales */ 
+body {
+  background-image: url(../img/fondo.png);
+  background-color: rgba(255, 255, 255, 0.7); 
+  background-blend-mode: lighten; 
+  background-repeat: repeat;
+  background-size: auto;
+  background-attachment: fixed;
+  font-family: 'Quicksand', sans-serif;
+  color: #2d472d;
+  margin: 0;
+}
+
+/* banner */ 
+.top-banner {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #c3ffe2;
+  color: #000;
+  text-align: center;
+  padding: 10px 20px;
+  z-index: 1031;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  height: 40px;
+}
+
+body {
+  margin-top: 40px; 
+}
+
+/* Estilo para la barra de navegación */
+
+.navbar {
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav-link {
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  font-weight: 700;
+  color: #e0f4e0;
+  text-decoration: none;
+}
+
+.navbar-toggler {
+  border-color: white;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+.nav-link:hover {
+  font-weight: 700;
+  color: #a5d6a7; 
+  text-decoration: none;
+  transform: scale(1.05); 
+}
+
+/* Footer */
+footer {
+    display: flex;           
+    justify-content: center; 
+    align-items: center;     
+    height: 40px;            
+    background-color: #c3ecd6;
+    color: #1b4332;
+    font-size: 0.85em;
+    font-weight: 400;
+    font-family:  Tahoma;
+    border-top: 1px solid #b7e4c7;
+}
+
+/* Contenido principal */
+
+/* Espaciado general */
+main {
+  padding: 40px 20px;  /* espacio superior/inferior y lateral */
+}
+
+/* Sección de bienvenida */
+section.mb-5.text-center {
+  margin-bottom: 3rem;
+}
+
+/* Título principal */
+section.mb-5.text-center h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgb(31, 121, 71);
+  margin-bottom: 0.5rem;
+}
+
+/* Párrafo debajo del título */
+section.mb-5.text-center p {
+  font-size: 1.2rem;
+  color: rgb(31, 121, 71);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Subtítulo de sección */
+section h2.mb-4 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(31, 121, 71);
+  margin-bottom: 1.5rem;
+}
+
+/* Estilos para productos */
+.planta-destacada {
+  background: linear-gradient(135deg, #e0f7e9 0%, #ffffff 100%);
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto 1.5rem auto;
+  gap: 1rem;
+}
+
+.planta-destacada:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.planta-destacada img {
+  border-radius: 12px;
+  max-width: 180px;
+  height: auto;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  flex-shrink: 0;
+}
+
+.planta-destacada img.img-hover:hover {
+  transform: scale(1.03);
+}
+
+/* Contenedor para texto y botones */
+.planta-destacada .info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.planta-destacada h3 {
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #2e7d32;
+}
+
+.planta-destacada p {
+  color: #0b8c56;
+  font-size: 0.95rem;
+  margin: 0.3rem 0;
+}
+
+/* Botones */
+.planta-destacada .buttons {
+  margin-top: auto;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.planta-destacada .btn {
+  width: 140px;
+  font-weight: 600;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+}
+
+/* Botón verde claro */
+.btn-verde-claro {
+  background-color: #81c784;
+  color: white;
+  border: none;
+}
+
+.btn-verde-claro:hover {
+  background-color: #66bb6a;
+  filter: brightness(1.1);
+}
+
+/* Botón verde oscuro */
+.btn-verde-oscuro {
+  background-color: #388e3c;
+  color: white;
+  border: none;
+}
+
+.btn-verde-oscuro:hover {
+  background-color: #2e7d32;
+  filter: brightness(1.1);
+}
+
+/* Carrusel */
+
+.planta-destacada {
+  width: 320px;        
+  min-height: 520px;    
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-sizing: border-box; 
+}
+
+.planta-destacada img {
+  height: 200px;        
+  width: 100%;          
+  object-fit: contain;  
+  border-radius: 8px;
+  margin-bottom: 15px;
+  background-color: #fff; 
+}
+
+.description {
+  flex-grow: 1;         
+  margin-bottom: 15px;
+}
+
+.buttons {
+  margin-top: auto;     
+}
+
+/* Sucursales */
+
+.text-success-custom {
+  color: #2e7d32; 
+}
+
+.hover-scale {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.hover-scale:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(46, 125, 50, 0.25);
+  background-color: #e8f5e9; 
+}
+
+.btn-success {
+  background-color: #2e7d32;
+  border-color: #2e7d32;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  color: #fff;
+}
+
+.btn-success:hover {
+  background-color: #43a047; 
+  border-color: #43a047;
+  box-shadow: 0 4px 12px rgba(67, 160, 71, 0.5);
+}
+
+.lead {
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #4caf50; 
+}
+
+.card-title {
+  color: #2e7d32; 
+}
+
+p {
+  color: #2e7d32;
+}
+
+.bi {
+  color: #2e7d32; 
+}
+
+/* Estilos generales para el formulario de contacto */
+
+main.container {
+  font-family: 'Poppins', sans-serif;
+  color: rgb(31, 121, 71);
+  background-color: #f3f9f4;
+  padding: 2rem 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px  rgb(31, 121, 71);
+}
+
+/* Títulos */
+h2, h3 {
+  color: rgb(31, 121, 71);
+  font-family: 'Quicksand', sans-serif
+}
+
+/* Labels */
+.form-label {
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+/* Inputs y textarea */
+input.form-control,
+textarea.form-control {
+  border: 2px solid #a5d6a7;
+  border-radius: 8px;
+  padding: 0.6rem 0.8rem;
+  font-size: 1rem;
+  background-color: #ffffff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus en inputs y textarea */
+input.form-control:focus,
+textarea.form-control:focus {
+  border-color: #2e7d32;
+  box-shadow: 0 0 8px #81c784;
+  outline: none;
+}
+
+/* Botón enviar */
+.btn-success {
+  background-color: #2e7d32;
+  border-color: #2e7d32;
+  font-weight: 700;
+  border-radius: 25px;
+  padding: 0.6rem 2.5rem;
+  box-shadow: 0 4px 10px  rgb(31, 121, 71);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-success:hover,
+.btn-success:focus {
+  background-color: #1b4332;
+  border-color: #1b4332;
+  box-shadow: 0 6px 14px rgb(27 67 50 / 0.6);
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Datos de contacto directo */
+section.text-center p {
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Estilos de Faqs */
+
+.bg-light-green {
+  background-color: #e8f5e9 ;
+   font-family: 'Quicksand', sans-serif; 
+}
+
+.accordion-button {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  font-size: 1.05rem;
+}
+
+.accordion-button:hover {
+  background-color: #d0ecd6 ;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #c8e6c9;
+  color: #2e7d32;
+  box-shadow: none;
+}
+
+.accordion-body {
+  background-color: #f3f9f4;
+  border-top: 1px solid #c8e6c9;
+  padding: 1rem 1.25rem;
+  font-size: 0.97rem;
+}
+
+/* Estilo unificado para todos los títulos */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Quicksand', sans-serif;
+  color: #2e7d32; /* verde fuerte */
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+* {
+  font-family: 'Quicksand', sans-serif !important;
+}
+
+
+/* Media query para mobile */
+@media (max-width: 576px) {
+  /* Navbar mobile: centrado de hamburguesa y menú */
+  .navbar .container-fluid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .navbar-brand {
+    align-self: flex-start;
+    margin-bottom: 0.5rem;
+  }
+
+  .navbar-toggler {
+    order: 1;
+    position: relative;
+    margin: 0 auto;
+    z-index: 2;
+  }
+
+  .navbar-collapse {
+    order: 2;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0.5rem 0;
+  }
+
+  /* Ajuste para el título principal */
+  section.mb-5.text-center h2 {
+    font-size: 2rem;  
+    margin-bottom: 0.4rem;
+  }
+
+  /* Ajuste para el párrafo debajo del título */
+  section.mb-5.text-center p {
+    font-size: 1rem;  
+    max-width: 90%;   
+  }
+
+  /* Ajuste para el subtítulo "Plantas más pedidas" */
+  section h2.mb-4 {
+    font-size: 1.5rem; 
+    margin-bottom: 0.8rem;
+  }
+
+  /* Productos */
+  .planta-destacada {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 95%;
+    padding: 0.5rem;
+    gap: 0.5rem;
+  }
+
+  .planta-destacada img {
+    max-width: 140px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .planta-destacada .info {
+    width: 100%;
+    align-items: center;
+  }
+
+  .planta-destacada h3 {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .planta-destacada p {
+    font-size: 0.8rem;
+    margin: 0.2rem 0;
+  }
+
+  .planta-destacada .buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    margin-top: 0.4rem;
+  }
+
+  .planta-destacada .btn {
+    width: 100%;
+    max-width: 140px;
+    padding: 0.3rem 0.5rem;
+    font-size: 0.8rem;
+    border-radius: 18px;
+  }
+
+  /* Estilo para el banner superior */
+  header {
+    margin-top: 50px; 
+  }
+
+}
+
+/* media queries mobile carrusel */
+
+@media (max-width: 576px) {
+  .planta-destacada {
+    width: 100%;
+    min-height: 400px; 
+    padding: 10px;
+  }
+  
+  .planta-destacada img {
+    height: auto;
+    max-height: 150px;
+  }
+  
+  .description {
+    margin-bottom: 10px;
+  }
+  
+  .buttons {
+    margin-top: 10px;
+  }
+}
+
+/* media queries mobile Sucursales */
+
+@media (max-width: 576px) {
+  .lead {
+    font-size: 1rem; 
+    text-align: center;
+  }
+
+  .card-title {
+    font-size: 1.2rem; 
+    text-align: center;
+  }
+
+  .hover-scale:hover {
+    transform: none; 
+    box-shadow: none;
+    background-color: inherit;
+  }
+
+  .btn-success {
+    width: 100%; 
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  p {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+
+  .bi {
+    font-size: 1.2rem; 
+  }
+}
+
+/* media queries mobile contacto */
+@media (max-width: 576px) {
+  input.form-control,
+  textarea.form-control {
+    font-size: 0.95rem;
+    padding: 0.5rem 0.7rem;
+  }
+
+  .btn-success {
+    padding: 0.5rem 2rem;
+    font-size: 0.95rem;
+  }
+
+  h2, h3 {
+    font-size: 1.5rem;
+  }
+
+  section.text-center p {
+    font-size: 1rem;
+  }
+}
+
+/* media queries mobile faqs */
+
+@media (max-width: 576px) {
+  .accordion-button {
+    font-size: 1rem; 
+    padding: 0.75rem 1rem; 
+  }
+
+  .accordion-body {
+    font-size: 0.9rem; 
+    padding: 0.75rem 1rem;
+  }
+}
+
+/* media queries mobile footer */
+
+@media (max-width: 576px) {
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 0.75em;
+    text-align: center;
+    background-color: #c3ecd6;
+    border-top: 1px solid #b7e4c7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  main {
+    margin-bottom: 60px; 
+  }
+}
+
