@@ -1,0 +1,21 @@
+// Mixin para transiciones suaves
+@mixin transition($props...) {
+  transition: $props;
+}
+
+// Mixin para flexbox centrado
+@mixin flex-center($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+// Mixin para foco en inputs
+@mixin input-focus($border-color, $box-shadow-color) {
+  &:focus {
+    border-color: $border-color;
+    box-shadow: 0 0 8px $box-shadow-color;
+    outline: none;
+  }
+}

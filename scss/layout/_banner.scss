@@ -1,0 +1,13 @@
+.top-banner {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: $color-fondo-banner;
+  color: black;
+  text-align: center;
+  padding: 10px 20px;
+  z-index: 1031;
+  @include flex-center(row, center, center);
+  font-size: 1rem;
+  height: 40px;
+}

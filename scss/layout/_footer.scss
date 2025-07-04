@@ -1,0 +1,15 @@
+footer {
+  @include flex-center(row, center, center);
+  height: 40px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: $color-fondo-footer;
+  color: $color-footer-texto;
+  font-size: 0.85em;
+  font-weight: 400;
+  font-family: $font-footer;
+  border-top: 1px solid lighten($color-fondo-footer, 10%);
+  z-index: 1000;
+}

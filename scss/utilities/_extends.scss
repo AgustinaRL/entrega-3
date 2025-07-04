@@ -1,0 +1,15 @@
+// Botón base
+%btn-base {
+  font-weight: 600;
+  border-radius: $btn-radius;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  border: none;
+  cursor: pointer;
+  @include transition(background-color 0.3s ease);
+}
+
+// Textos con color verde fuerte
+%text-success {
+  color: $color-verde-oscuro;
+}

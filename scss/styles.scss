@@ -1,0 +1,12 @@
+@import './utilities/variables';
+@import './utilities/mixins';
+@import './utilities/extends';
+
+@import './layout/base';
+@import './layout/banner';
+@import './layout/navbar';
+@import './layout/footer';
+@import './layout/main';
+@import './layout/plantas';
+
+@import './mediaqueries/responsive';
